@@ -1,0 +1,4 @@
+.createNoteForm {
+    display: flex;
+    flex-wrap: wrap;
+}
