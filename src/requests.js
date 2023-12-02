@@ -1,4 +1,9 @@
-fetch('http://localhost:3000/notes/', {
+const URL = 'http://localhost:3000/notes/'
+export const getNotes = () => {
+  return fetch(URL).then((response) => response.json())
+}
+
+/* fetch('http://localhost:3000/notes/', {
     method: 'POST', 
     headers: {"Content-Type": "application/json"}, 
     body: JSON.stringify({ title, body, updatedAt: new Date() })
@@ -7,4 +12,4 @@ fetch('http://localhost:3000/notes/', {
   .then(
     data => console.log(data)
     
-  )
+  ) */

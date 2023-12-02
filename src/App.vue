@@ -1,16 +1,23 @@
 <script setup>
 import { ref } from 'vue';
-const url = 'http://localhost:3000/notes/'
+import NoteList from './components/NoteList.vue'
+
+// write getRequest to get notes from url, push to array
+
+/* generateNotes //generates notes from userNotes
+
+editNotes //show then PATCH edited note to api
+
+deleteNote // DELETE note
+
+confirmDelete //button to confirm delete*/
 
 
-const notes = [
+const userNotes = ([//delete this once get works
     {
-      id: 1,
-      "title": "Sample note",
-      "body": "This is the body of my note",
-      
-    }
-  ]
+      id: 1, "title": "Sample note", "body": "This is the body of my note",
+      }
+  ])
 const header = ref('New Note')
 const newNoteTitle = ref("")
 const newNoteBody = ref("")
@@ -20,7 +27,7 @@ const newNoteBody = ref("")
   <div>
     <h1>Vue Notes</h1>
     <h3> {{ header }}</h3>
-    <form>
+    <form id="NoteForm"> <!-- style later -->
     <div class="createNoteForm">
     <input v-model="newNoteTitle" type="text" placeholder="Title"> 
     <input v-model="newNoteBody" type="text" placeholder="Body">
@@ -28,13 +35,12 @@ const newNoteBody = ref("")
     </div>
     </form>
   </div>
-  <div>
-    <div v-for="note of notes" :key="id">
-    {{ note.title }}
+  <div v-for="notess in userNotes" :key="id">
+  {{ notess.title }}
     <br>
-    {{ note.body }}
-    </div>
-  </div>
+    {{ notess.body }}
+</div>
+  
 </template>
 
 <style scoped>
