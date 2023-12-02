@@ -13,11 +13,7 @@ deleteNote // DELETE note
 confirmDelete //button to confirm delete*/
 
 
-const userNotes = ([//delete this once get works
-    {
-      id: 1, "title": "Sample note", "body": "This is the body of my note",
-      }
-  ])
+
 const header = ref('New Note')
 const newNoteTitle = ref("")
 const newNoteBody = ref("")
@@ -35,12 +31,8 @@ const newNoteBody = ref("")
     </div>
     </form>
   </div>
-  <div v-for="notess in userNotes" :key="id">
-  {{ notess.title }}
-    <br>
-    {{ notess.body }}
-</div>
   
+  <NoteList />
 </template>
 
 <style scoped>

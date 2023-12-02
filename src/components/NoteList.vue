@@ -9,13 +9,12 @@ notes.value = data
 </script>
 
 <template>
-<ul>
-<li v-for="note in notes" :key="id">
+
+<div v-for="note in notes" :key="id">
 {{ note.title }}
 <br>
 {{ note.body }}
-</li>
-</ul>
+</div>
 
 </template>
 
