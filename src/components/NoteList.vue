@@ -10,7 +10,7 @@ notes.value = data
 
 <template>
 
-<div v-for="note in notes" :key="id">
+<div v-for="note in notes" :key="note.id">
 {{ note.title }}
 <br>
 {{ note.body }}

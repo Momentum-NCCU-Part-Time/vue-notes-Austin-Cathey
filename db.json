@@ -5,6 +5,16 @@
       "title": "Sample note",
       "body": "This is the body of my note",
       "updatedAt": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Another sample",
+      "body": "This is the note"
+    },
+    {
+      "id": 3,
+      "title": "Another sample 3",
+      "body": "This is the note 3"
     }
   ]
 }

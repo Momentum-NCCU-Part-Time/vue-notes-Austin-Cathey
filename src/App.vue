@@ -26,13 +26,14 @@ const newNoteBody = ref("")
     <form id="NoteForm"> <!-- style later -->
     <div class="createNoteForm">
     <input v-model="newNoteTitle" type="text" placeholder="Title"> 
+    <br>
     <input v-model="newNoteBody" type="text" placeholder="Body">
     <button @submit.prevent="saveNote">Save</button>
     </div>
     </form>
   </div>
   
-  <NoteList />
+<NoteList />
 </template>
 
 <style scoped>
