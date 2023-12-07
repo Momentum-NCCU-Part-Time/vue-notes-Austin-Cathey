@@ -15,6 +15,54 @@
       "id": 3,
       "title": "Another sample 3",
       "body": "This is the note 3"
+    },
+    {
+      "title": "new note",
+      "body": "test note 1",
+      "updatedAt": "2023-12-07T15:11:55.466Z",
+      "id": 4
+    },
+    {
+      "title": "new note 2",
+      "body": "test note 2\n",
+      "updatedAt": "2023-12-07T15:12:51.775Z",
+      "id": 5
+    },
+    {
+      "title": "test note 3",
+      "body": "another test note",
+      "updatedAt": "2023-12-07T15:16:09.763Z",
+      "id": 6
+    },
+    {
+      "title": "new note tester",
+      "body": "another new note",
+      "updatedAt": "2023-12-07T15:18:32.933Z",
+      "id": 7
+    },
+    {
+      "title": "testing reset",
+      "body": "testing reset function",
+      "updatedAt": "2023-12-07T15:22:07.846Z",
+      "id": 8
+    },
+    {
+      "title": "testing reset2.0",
+      "body": "testing reset function again",
+      "updatedAt": "2023-12-07T15:23:17.181Z",
+      "id": 9
+    },
+    {
+      "title": "new note tester again",
+      "body": "still testing reset",
+      "updatedAt": "2023-12-07T15:24:43.025Z",
+      "id": 10
+    },
+    {
+      "title": "reset test 5",
+      "body": "fixed reset?",
+      "updatedAt": "2023-12-07T15:25:34.718Z",
+      "id": 11
     }
   ]
 }

@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import NoteList from './components/NoteList.vue'
+import NoteList from './components/NoteList.vue';
+
 
 // write getRequest to get notes from url, push to array
 
@@ -14,24 +15,11 @@ confirmDelete //button to confirm delete*/
 
 
 
-const header = ref('New Note')
-const newNoteTitle = ref("")
-const newNoteBody = ref("")
+
 </script>
 
 <template>
-  <div>
-    <h1>Vue Notes</h1>
-    <h3> {{ header }}</h3>
-    <form id="NoteForm"> <!-- style later -->
-    <div class="createNoteForm">
-    <input v-model="newNoteTitle" type="text" placeholder="Title"> 
-    <br>
-    <input v-model="newNoteBody" type="text" placeholder="Body">
-    <button @submit.prevent="saveNote">Save</button>
-    </div>
-    </form>
-  </div>
+
   
 <NoteList />
 </template>
