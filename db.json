@@ -63,6 +63,57 @@
       "body": "fixed reset?",
       "updatedAt": "2023-12-07T15:25:34.718Z",
       "id": 11
+    },
+    {
+      "title": "test note w/emit",
+      "body": "test this",
+      "updatedAt": "2023-12-07T23:42:31.089Z",
+      "id": 12
+    },
+    {
+      "title": "testing push",
+      "body": "testing new push",
+      "id": 13
+    },
+    {
+      "title": "newest test",
+      "body": "testing new code",
+      "id": 14
+    },
+    {
+      "title": "new test",
+      "body": "testing new code",
+      "id": 15
+    },
+    {
+      "title": "newest test",
+      "body": "testing new code",
+      "id": 16
+    },
+    {
+      "title": "testing code again for refresh",
+      "body": "works?",
+      "id": 17
+    },
+    {
+      "title": "testing get",
+      "body": "seeing where we are",
+      "id": 18
+    },
+    {
+      "title": "testing get",
+      "body": "still not refreshing?",
+      "id": 19
+    },
+    {
+      "title": "testing post again",
+      "body": "still not automatic",
+      "id": 20
+    },
+    {
+      "title": "testing agin",
+      "body": "new code",
+      "id": 21
     }
   ]
 }

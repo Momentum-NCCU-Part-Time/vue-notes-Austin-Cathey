@@ -1,45 +1,41 @@
 <script setup>
+import { ref } from "vue";
+import NoteList from "./NoteList.vue";
+const header = ref("New Note");
+const newNoteTitle = ref("");
+const newNoteBody = ref("");
 
-import { ref } from 'vue'
-import { createNote} from '@/requests'
-const header = ref('New Note')
-const newNoteTitle = ref("")
-const newNoteBody = ref("")
-
-const emit = defineEmits(['noteCreated'])
-
-const addNote = () => {
-    if (!newNoteTitle.value) return
-    createNote({ title: newNoteTitle.value, body: newNoteBody.value})
-    .then((createdNote) => {
-        emit('noteCreated', createdNote)
-        resetNote()
-    })
-}
+const createNote = () => {
+  fetch("http://localhost:3000/notes/", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body:JSON.stringify({ title: newNoteTitle.value, body: newNoteBody.value }),
+  }).then((res) => res.json())
+  .then((data) => console.log());
+  resetNote()
+};
 
 const resetNote = () => {
-newNoteTitle.value = ""
-newNoteBody.value = ""
-}
+  newNoteTitle.value = "";
+  newNoteBody.value = "";
+};
 </script>
 
-
 <template>
-
-<div>
-<h1>Vue Notes</h1>
-<h3> {{ header }}</h3>
-    <form  @submit.prevent="addNote" class="addNote"> <!-- style later -->
-     <div class="newTitle">
-     <input v-model="newNoteTitle" type="text" placeholder="Title"> 
-     </div>
-     <br>
-     <div class="newBody">
-     <textarea v-model="newNoteBody" type="text" placeholder="Body">
-     </textarea>
-     </div>
-     <button type="submit" :disabled="!newNoteTitle">New note</button>
+  <div>
+    <h1>Vue Notes</h1>
+    <h3>{{ header }}</h3>
+    <form @submit.prevent="createNote">
+      <!-- style later -->
+      <div class="newTitle">
+        <input v-model="newNoteTitle" type="text" placeholder="Title" />
+      </div>
+      <br />
+      <div class="newBody">
+        <textarea v-model="newNoteBody" type="text" placeholder="Body">
+        </textarea>
+      </div>
+      <button type="submit">New note</button>
     </form>
-</div>
-
+  </div>
 </template>
