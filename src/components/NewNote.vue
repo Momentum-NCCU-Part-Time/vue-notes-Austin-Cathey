@@ -16,14 +16,7 @@ const createNote = () => {
   .then((data) => console.log(data));
   resetNote()
 };
-function getNotes() {
-fetch("http://localhost:3000/notes/", {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-})
-.then((res) => res.json())
-.then((data) => (notes.value = data));
-};
+
 
 function resetNote() {
   newNoteTitle.value = "";

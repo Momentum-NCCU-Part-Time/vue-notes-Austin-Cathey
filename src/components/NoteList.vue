@@ -37,7 +37,7 @@ notes.value =
       {{ note.title }}
       <br />
       {{ note.body }}
-      <EditDelete />
+      <EditDelete :note="note" />
       </div>
     </div>
   
