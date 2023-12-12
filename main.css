@@ -1,4 +1,20 @@
-.createNoteForm {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#noteCards {
     display: flex;
     flex-wrap: wrap;
+}
+
+.noteCard {
+margin: 10px;
+border: 3px solid grey;
+border-radius: 10% 10% 10% 10%;
+}
+
+.confirmDeleteBtn {
+    margin-left: 1rem;
 }

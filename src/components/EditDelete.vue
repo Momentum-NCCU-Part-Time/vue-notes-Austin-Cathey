@@ -71,7 +71,7 @@ function doEdit(e) {
       <button type="submit">Save</button>
     </form>
     <button v-if="deleting" class="btn" @click="confirmDelete(false)">Keep Note</button>
-    <button v-else @click="confirmDelete(true)">Delete</button>
+    <button v-else class="confirmDeleteBtn" @click="confirmDelete(true)">Delete</button>
     <form class="deleteButton" v-if="deleting" @click.prevent="deleteNote()">
         <button type="submit">No really, delete</button>
     </form>
