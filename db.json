@@ -1,12 +1,6 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "Sample note",
-      "body": "This is the body of my note",
-      "updatedAt": "2018-01-01T00:00:00.000Z"
-    },
-    {
       "id": 2,
       "title": "Another sample",
       "body": "This is the note"
@@ -114,6 +108,31 @@
       "title": "testing agin",
       "body": "new code",
       "id": 21
+    },
+    {
+      "title": "reset test",
+      "body": "testing reset function",
+      "id": 22
+    },
+    {
+      "title": "testing notes",
+      "body": "testing post",
+      "id": 23
+    },
+    {
+      "title": "note test",
+      "body": "another test",
+      "id": 24
+    },
+    {
+      "title": "note test",
+      "body": "testing",
+      "id": 25
+    },
+    {
+      "title": "tuesday morning",
+      "body": "testing notes",
+      "id": 26
     }
   ]
 }
