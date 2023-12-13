@@ -58,7 +58,7 @@ function doEdit(e) {
     </div> -->
   <div class="editDelete">
     <button v-if="editing" class="btn" @click="doEdit(false)">Cancel</button>
-    <button v-else class="btn btn-primary" @click="doEdit(true)">Edit</button>
+    <button v-else class="btn" @click="doEdit(true)">Edit</button>
     <form class="editNote" v-if="editing" @submit.prevent="editNote">
       <div class="editTitle">
         <input v-model="editedNoteTitle" type="text" placeholder="Title" />

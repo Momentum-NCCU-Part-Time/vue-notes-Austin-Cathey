@@ -23,9 +23,7 @@ fetch("http://localhost:3000/notes/", {
 .then((data) => (notes.value = data));
 };
 
-/* function pushNote() {
-notes.value =
-}; */
+
 
 </script>
 
@@ -34,7 +32,7 @@ notes.value =
   <div id="noteCards">
     <!-- <Note v-for="note in notes" /> -->
     <div class="noteCard" v-for="note in notes" :key="note.id">
-      {{ note.title }}
+      <h4>{{ note.title }}</h4>
       <br />
       {{ note.body }}
       <EditDelete :note="note" />

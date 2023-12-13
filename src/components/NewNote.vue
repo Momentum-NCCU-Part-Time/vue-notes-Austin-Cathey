@@ -39,7 +39,7 @@ getNotes();
         <textarea v-model="newNoteBody" type="text" placeholder="Body">
         </textarea>
       </div>
-      <button type="submit">New note</button>
+      <button type="submit">Save note</button>
     </form>
   </div>
 </template>
