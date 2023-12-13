@@ -6,23 +6,28 @@ let editedNoteBody = ref("");
 const editing = ref(false);
 const deleting = ref(false);
 
+const emit = defineEmits(["noteDeleted", "noteEdited"]);
+
 const props = 
 defineProps
 ({note: Object});
+console.log(props.note)
 
-function deleteNote() {
+const deleteNote = () => {
   fetch("http://localhost:3000/notes/" + props.note.id, {
     method: "DELETE",
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((deletedNote) => {
+        emit("noteDeleted", deletedNote)
+    });
 };
 
 function confirmDelete(e) {
     deleting.value = e
 };
 
-function editNote() {
+const editNote = () => {
   fetch("http://localhost:3000/notes/" + props.note.id, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
@@ -32,7 +37,10 @@ function editNote() {
     }),
   })
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((editedNote) => {
+        emit("noteEdited", editedNote)
+        editing.value = false
+    });
 }
 
 const saveNote = () => {

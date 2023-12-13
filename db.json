@@ -1,8 +1,8 @@
 {
   "notes": [
     {
-      "title": "test note 3",
-      "body": "another test note",
+      "title": "test note 13",
+      "body": "testing 13",
       "updatedAt": "2023-12-07T15:16:09.763Z",
       "id": 6
     },
@@ -106,6 +106,16 @@
       "title": "note test",
       "body": "testing",
       "id": 25
+    },
+    {
+      "title": "test emit",
+      "body": "testing emit",
+      "id": 26
+    },
+    {
+      "title": "emit",
+      "body": "test",
+      "id": 27
     }
   ]
 }

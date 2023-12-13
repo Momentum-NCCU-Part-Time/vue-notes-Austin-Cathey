@@ -4,7 +4,7 @@ import NoteList from "./NoteList.vue";
 const header = ref("New Note");
 const newNoteTitle = ref("");
 const newNoteBody = ref("");
-
+const emit = defineEmits(["noteCreated"]);
 
 const createNote = () => {
   fetch("http://localhost:3000/notes/", {
@@ -13,8 +13,10 @@ const createNote = () => {
     body:JSON.stringify({ title: newNoteTitle.value, body: newNoteBody.value }),
   })
   .then((res) => res.json())
-  .then((data) => console.log(data));
-  resetNote()
+  .then((note) => {
+    emit("noteCreated", note)
+    resetNote()
+  });
 };
 
 

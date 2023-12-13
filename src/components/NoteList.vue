@@ -23,19 +23,33 @@ fetch("http://localhost:3000/notes/", {
 .then((data) => (notes.value = data));
 };
 
+const addNote = (note) => {
+  notes.value = [...notes.value, note];
+};
 
+ const updateNote = (editedNote) => {
+   notes.value = notes.value.map((note) => {
+    if (note.id === editedNote.id) {
+      return editedNote
+    }
+    return note
+   })
+};
 
 </script>
 
 <template> 
-  <NewNote />
+  <NewNote @noteCreated="addNote"/>
   <div id="noteCards">
     <!-- <Note v-for="note in notes" /> -->
     <div class="noteCard" v-for="note in notes" :key="note.id">
       <h4>{{ note.title }}</h4>
       <br />
       {{ note.body }}
-      <EditDelete :note="note" />
+      <EditDelete 
+      :note="note" 
+      @noteEdited="updateNote" 
+      @noteDeleted="removeNote"/>
       </div>
     </div>
   
