@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+#notesApp{
+    
+}
+
+.vueNotes{
+    
+    border: 1px solid red;
+}
+
 #noteCards {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +22,13 @@
 margin: 10px;
 border: 3px solid white;
 border-radius: 10% 10% 10% 10%;
+}
+.newNotePad{
+margin: 1rem;
+}
+
+.newHeader, .newTitle, .newBody {
+    margin: 1px;
 }
 
 .confirmDeleteBtn {

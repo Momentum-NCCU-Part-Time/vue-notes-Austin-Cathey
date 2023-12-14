@@ -59,11 +59,7 @@ function doEdit(e) {
 </script>
 
 <template>
-    <!-- <div id="note">
-        {{ props.title }}
-        {{ props.body }}
-        {{ props.id }}
-    </div> -->
+
   <div class="editDelete">
     <button v-if="editing" class="btn" @click="doEdit(false)">Cancel</button>
     <button v-else class="btn" @click="doEdit(true)">Edit</button>

@@ -28,17 +28,26 @@ const addNote = (note) => {
 };
 
  const updateNote = (editedNote) => {
-   notes.value = notes.value.map((note) => {
+  getNotes()
+/*    notes.value = notes.value.map((note) => {
     if (note.id === editedNote.id) {
       return editedNote
     }
     return note
-   })
+   }) */
 };
+
+
+const removeNote = (deletedNote) => {
+  /* notes.value = notes.value.filter((note) => note.id === deletedNote.id) */
+  getNotes()
+  };
 
 </script>
 
 <template> 
+<div id="notesApp">
+<h1 class="vueNotes">Vue Notes</h1>
   <NewNote @noteCreated="addNote"/>
   <div id="noteCards">
     <!-- <Note v-for="note in notes" /> -->
@@ -52,6 +61,7 @@ const addNote = (note) => {
       @noteDeleted="removeNote"/>
       </div>
     </div>
+  </div>
   
 
 

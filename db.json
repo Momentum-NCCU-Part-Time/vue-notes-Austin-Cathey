@@ -1,22 +1,10 @@
 {
   "notes": [
     {
-      "title": "test note 13",
-      "body": "testing 13",
+      "title": "test note 14",
+      "body": "testing 14",
       "updatedAt": "2023-12-07T15:16:09.763Z",
       "id": 6
-    },
-    {
-      "title": "new note tester",
-      "body": "another new note",
-      "updatedAt": "2023-12-07T15:18:32.933Z",
-      "id": 7
-    },
-    {
-      "title": "testing reset",
-      "body": "testing reset function",
-      "updatedAt": "2023-12-07T15:22:07.846Z",
-      "id": 8
     },
     {
       "title": "testing reset2.0",
@@ -25,97 +13,9 @@
       "id": 9
     },
     {
-      "title": "new note tester again",
-      "body": "still testing reset",
-      "updatedAt": "2023-12-07T15:24:43.025Z",
+      "title": "new note",
+      "body": "for testzzzz\n",
       "id": 10
-    },
-    {
-      "title": "reset test 5",
-      "body": "fixed reset?",
-      "updatedAt": "2023-12-07T15:25:34.718Z",
-      "id": 11
-    },
-    {
-      "title": "test note w/emit",
-      "body": "test this",
-      "updatedAt": "2023-12-07T23:42:31.089Z",
-      "id": 12
-    },
-    {
-      "title": "testing push",
-      "body": "testing new push",
-      "id": 13
-    },
-    {
-      "title": "newest test",
-      "body": "testing new code",
-      "id": 14
-    },
-    {
-      "title": "new test",
-      "body": "testing new code",
-      "id": 15
-    },
-    {
-      "title": "newest test",
-      "body": "testing new code",
-      "id": 16
-    },
-    {
-      "title": "testing code again for refresh",
-      "body": "works?",
-      "id": 17
-    },
-    {
-      "title": "testing get",
-      "body": "seeing where we are",
-      "id": 18
-    },
-    {
-      "title": "testing get",
-      "body": "still not refreshing?",
-      "id": 19
-    },
-    {
-      "title": "testing post again",
-      "body": "still not automatic",
-      "id": 20
-    },
-    {
-      "title": "testing agin",
-      "body": "new code",
-      "id": 21
-    },
-    {
-      "title": "reset test",
-      "body": "testing reset function",
-      "id": 22
-    },
-    {
-      "title": "testing notes",
-      "body": "testing post",
-      "id": 23
-    },
-    {
-      "title": "note test",
-      "body": "another test",
-      "id": 24
-    },
-    {
-      "title": "note test",
-      "body": "testing",
-      "id": 25
-    },
-    {
-      "title": "test emit",
-      "body": "testing emit",
-      "id": 26
-    },
-    {
-      "title": "emit",
-      "body": "test",
-      "id": 27
     }
   ]
 }

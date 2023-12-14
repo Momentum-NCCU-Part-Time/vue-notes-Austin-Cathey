@@ -28,9 +28,8 @@ getNotes();
 </script>
 
 <template>
-  <div>
-    <h1>Vue Notes</h1>
-    <h3>{{ header }}</h3>
+  <div class="newNotePad">
+    <h2 class="newHeader">{{ header }}</h2>
     <form @submit.prevent="createNote">
       
       <div class="newTitle">
